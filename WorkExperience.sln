@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkExperience", "WorkExperience\WorkExperience.csproj", "{8018F0B6-5C10-4D4C-AE91-8AE7772A5B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkExperience.Tests", "WorkExperience.Tests\WorkExperience.Tests.csproj", "{D18CFEFF-F16E-42EC-BD36-F5941E9F6C83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{0F63FF02-A888-4BDA-A0F7-956F93728FB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{ED26CB32-5031-4E10-A8B5-07AD3111FE8C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{AB487167-7680-4053-BC2E-3361D81EDF43}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\WorkExperience.json = PublishScripts\Templates\WorkExperience.json
+		PublishScripts\Templates\WorkExperience.param.dev.json = PublishScripts\Templates\WorkExperience.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8018F0B6-5C10-4D4C-AE91-8AE7772A5B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8018F0B6-5C10-4D4C-AE91-8AE7772A5B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8018F0B6-5C10-4D4C-AE91-8AE7772A5B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8018F0B6-5C10-4D4C-AE91-8AE7772A5B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18CFEFF-F16E-42EC-BD36-F5941E9F6C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18CFEFF-F16E-42EC-BD36-F5941E9F6C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18CFEFF-F16E-42EC-BD36-F5941E9F6C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18CFEFF-F16E-42EC-BD36-F5941E9F6C83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED26CB32-5031-4E10-A8B5-07AD3111FE8C} = {0F63FF02-A888-4BDA-A0F7-956F93728FB3}
+		{AB487167-7680-4053-BC2E-3361D81EDF43} = {0F63FF02-A888-4BDA-A0F7-956F93728FB3}
+	EndGlobalSection
+EndGlobal
