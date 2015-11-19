@@ -1,11 +1,13 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace WorkExperience.Models
 {
-    public class Resume
+    public class Resume : MongoEntity
     {
         public string Position { get; set; }
 

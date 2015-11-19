@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Security;
 using System.Web.SessionState;
-using WorkExperience.Repositories;
+using WorkExperience.Models;
 
 namespace WorkExperience
 {
@@ -21,7 +21,8 @@ namespace WorkExperience
 
             // DI Stuff
             var container = new Container();
-            container.Register<IResumeRepository, ResumeRepository>(Lifestyle.Transient);
+            //container.Register<IResumeRepository, ResumeRepository>(Lifestyle.Transient);
+            container.Register<IResumeRepository, ResumeMongoRepository>(Lifestyle.Transient);
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
             container.Verify();
             GlobalConfiguration.Configuration.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container); 

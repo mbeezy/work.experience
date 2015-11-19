@@ -6,7 +6,6 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using WorkExperience.Models;
-using WorkExperience.Repositories;
 
 namespace WorkExperience.Controllers
 {
@@ -17,6 +16,7 @@ namespace WorkExperience.Controllers
 
         public ResumeController(IResumeRepository resumeRepository)
         {
+            
             _resumeRepository = resumeRepository;
         }
 

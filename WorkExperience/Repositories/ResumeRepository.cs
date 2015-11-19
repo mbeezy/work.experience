@@ -6,11 +6,11 @@ using System.Web;
 using System.Web.Hosting;
 using WorkExperience.Models;
 
-namespace WorkExperience.Repositories
+namespace WorkExperience.Models
 {
     public class ResumeRepository : IResumeRepository
     {
-        public List<Resume> Retrieve()
+        public IEnumerable<Resume> Retrieve()
         {
             var filePath = HostingEnvironment.MapPath(@"~/App_Data/resume.json");
             var json = System.IO.File.ReadAllText(filePath);

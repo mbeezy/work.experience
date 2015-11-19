@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using WorkExperience.Models;
 
-namespace WorkExperience.Repositories
+namespace WorkExperience.Models
 {
     public interface IResumeRepository
     {
-        List<Resume> Retrieve();
+        IEnumerable<Resume> Retrieve();
     }
 }
